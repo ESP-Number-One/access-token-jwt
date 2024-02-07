@@ -1,6 +1,6 @@
 import { createSecretKey } from 'crypto';
 import { createRemoteJWKSet } from 'jose';
-export default ({ agent, cooldownDuration, timeoutDuration, cacheMaxAge, secret }) => {
+export default ({ agent, cooldownDuration, timeoutDuration, cacheMaxAge, secret, }) => {
     let getKeyFn;
     let prevjwksUri;
     const secretKey = secret && createSecretKey(Buffer.from(secret));

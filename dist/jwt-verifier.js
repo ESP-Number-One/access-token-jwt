@@ -1,9 +1,9 @@
 import { strict as assert } from 'assert';
 import { jwtVerify } from 'jose';
 import { InvalidTokenError } from 'oauth2-bearer';
-import discovery from './discovery';
-import getKeyFn from './get-key-fn';
-import validate, { defaultValidators } from './validate';
+import discovery from './discovery.js';
+import getKeyFn from './get-key-fn.js';
+import validate, { defaultValidators } from './validate.js';
 const ASYMMETRIC_ALGS = [
     'RS256',
     'RS384',

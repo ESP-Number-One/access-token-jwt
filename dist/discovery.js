@@ -1,5 +1,5 @@
 import { URL } from 'url';
-import fetch from './fetch';
+import fetch from './fetch.js';
 import { strict as assert } from 'assert';
 const OIDC_DISCOVERY = '/.well-known/openid-configuration';
 const OAUTH2_DISCOVERY = '/.well-known/oauth-authorization-server';

@@ -1,6 +1,6 @@
 import { createSecretKey } from 'crypto';
 import { createRemoteJWKSet } from 'jose';
-import { JwtVerifierOptions } from './jwt-verifier';
+import { JwtVerifierOptions } from './jwt-verifier.js';
 
 type GetKeyFn = ReturnType<typeof createRemoteJWKSet>;
 
@@ -17,7 +17,7 @@ export default ({
   cooldownDuration,
   timeoutDuration,
   cacheMaxAge,
-  secret
+  secret,
 }: JWKSOptions) => {
   let getKeyFn: GetKeyFn;
   let prevjwksUri: string;

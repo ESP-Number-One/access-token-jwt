@@ -3,7 +3,7 @@
 import { Agent as HttpAgent } from 'http';
 import { Agent as HttpsAgent } from 'https';
 import type { JWTPayload, JWSHeaderParameters } from 'jose';
-import { Validators } from './validate';
+import { Validators } from './validate.js';
 export interface JwtVerifierOptions {
     issuerBaseURL?: string;
     audience?: string | string[];

@@ -1,5 +1,5 @@
 import { URL } from 'url';
-import fetch from './fetch';
+import fetch from './fetch.js';
 import { strict as assert } from 'assert';
 import { JwtVerifierOptions } from './jwt-verifier';
 
